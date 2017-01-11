@@ -23,14 +23,6 @@
 [01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48]
 ])
 
-(def data2 [
-[1 2 3 4 2]
-[1 2 3 5 4]
-[1 2 5 4 4]
-[1 5 3 4 4]
-[5 2 3 4 4]
-])
-
 (defn get-index [data row col] (get (get data row 0) col 0))
 
 (defn get-indices [data indices] (map #(apply (partial get-index data) %1) indices))
